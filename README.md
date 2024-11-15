@@ -38,3 +38,23 @@ You can install the required Python packages using the code:
       2.MySQL server is running and accessible.
       3.Required tables exist in the database.
       
+#ER Diagram: 
+
++--------------------+       +------------------+       +-------------------+
+|      Account       |       |    Application   |       |       Course      |
++--------------------+       +------------------+       +-------------------+
+| id (PK)            |<------| id (PK)          |<------| id (PK)           |
+| email              |       | status           |       | name              |
+| program            |       | account_id (FK)  |       | fee               |
+| current_level      |       +------------------+       +-------------------+
++--------------------+                 |
+                                      |
+                                      |
+                         +------------------------------+
+                         | TermCourseRegistrationApp    |
+                         +------------------------------+
+                         | id (PK)                      |
+                         | applying_level               |
+                         | application_id (FK)          |
+                         | course_id (FK)               |
+                         +------------------------------+

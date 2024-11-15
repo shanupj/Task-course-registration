@@ -40,21 +40,6 @@ You can install the required Python packages using the code:
       
 #ER Diagram: 
 
-+--------------------+       +------------------+       +-------------------+
-|      Account       |       |    Application   |       |       Course      |
-+--------------------+       +------------------+       +-------------------+
-| id (PK)            |<------| id (PK)          |<------| id (PK)           |
-| email              |       | status           |       | name              |
-| program            |       | account_id (FK)  |       | fee               |
-| current_level      |       +------------------+       +-------------------+
-+--------------------+                 |
-                                      |
-                                      |
-                         +------------------------------+
-                         | TermCourseRegistrationApp    |
-                         +------------------------------+
-                         | id (PK)                      |
-                         | applying_level               |
-                         | application_id (FK)          |
-                         | course_id (FK)               |
-                         +------------------------------+
+![image](https://github.com/user-attachments/assets/592422eb-3c18-4b2e-848d-b7bba608bc34)
+
+
